@@ -1,0 +1,378 @@
+/* ================================
+   GENERAL PAGE STYLING
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   HEADER
+   ================================ */
+
+header {
+    background: linear-gradient(135deg, #123c69, #1f6f8b);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+
+/* ================================
+   NAVIGATION BAR
+   ================================ */
+
+nav {
+    background-color: #0b2545;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #1f6f8b;
+}
+
+
+/* ================================
+   MAIN CONTENT
+   ================================ */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+
+/* ================================
+   CONTENT SECTIONS
+   ================================ */
+
+.content-section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.content-section h2 {
+    color: #123c69;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #1f6f8b;
+    padding-bottom: 8px;
+}
+
+.content-section h3 {
+    color: #1f6f8b;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.content-section p {
+    margin-bottom: 15px;
+}
+
+
+/* ================================
+   BOX MODEL DEMONSTRATION
+   ================================ */
+
+.box-model-demo {
+    background-color: #e8f1f8;
+    border: 3px solid #1f6f8b;
+    padding: 20px;
+    margin: 25px 0 10px 0;
+    border-radius: 8px;
+}
+
+.box-model-demo p {
+    margin: 0;
+}
+
+
+/* ================================
+   LISTS
+   ================================ */
+
+.content-section ul,
+.content-section ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.content-section li {
+    margin-bottom: 8px;
+}
+
+
+/* ================================
+   TABLE
+   ================================ */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #123c69;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #123c69;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f6f9;
+}
+
+tr:hover {
+    background-color: #e8f1f8;
+}
+
+
+/* ================================
+   PHOTO GALLERY
+   ================================ */
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.photo-card {
+    background-color: #f8f9fa;
+    width: 30%;
+    min-width: 220px;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+    text-align: center;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.photo-card figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #123c69;
+}
+
+
+/* ================================
+   MEDIA
+   ================================ */
+
+.media-item {
+    background-color: #f4f7fb;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 5px solid #1f6f8b;
+    border-radius: 5px;
+}
+
+.media-item h3 {
+    margin-top: 0;
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+audio {
+    width: 100%;
+    max-width: 600px;
+    margin: 15px 0;
+}
+
+
+/* ================================
+   CONTACT FORM
+   ================================ */
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #123c69;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1f6f8b;
+    box-shadow: 0 0 5px rgba(31, 111, 139, 0.3);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+button {
+    background-color: #6aa2dd;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #831040;
+}
+
+.form-note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+footer {
+    background-color: #0b2545;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+   ================================ */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 10px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .content-section {
+        padding: 20px;
+    }
+
+    .photo-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
