@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Naomi Moonga's student portfolio showcasing learning, interests, media and web projects.">
+  <title>Naomi Moonga | Student Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" hiref="#main">Skip to content</a>
+  <header class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">STUDENT PORTFOLIO · 2026</p>
+      <h1>Hello, I'm Naomi.</h1>
+      <p class="hero-subtitle">Second-year Information Technology student at Mulungushi University</p>
+      <p class="hero-copy">Learning, building, and growing one project at a time.</p>
+      <a class="button button-light" href="#projects">Explore my work</a>
+    </div>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme">🌙 Dark mode</button>
+  </header>
+  <nav class="site-nav" aria-label="Main navigation">
+    <ul>
+      <li><a href="#about">About</a></li><li><a href="#hobbies">Hobbies</a></li><li><a href="#learning">Learning plan</a></li><li><a href="#projects">Projects & skills</a></li><li><a href="#photos">Photos</a></li><li><a href="#media">Media</a></li><li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main id="main" class="page-layout">
+    <section id="about" class="content-section">
+      <p class="eyebrow">A LITTLE ABOUT ME</p><h2>About me</h2>
+      <p>My name is Naomi Moonga, and I am a second-year Information Technology student at Mulungushi University. I am developing my skills in web technologies and learning how to turn ideas into useful digital experiences.Honestly it's not that easy and sometimes i feel like giving up.But I keep pushing forward. Time goes by so fast,i'm now in my second year and I am workig on myself,i want to know how to program,understand codes and be a good programmer.I hope with the help of all my lecturers i make it out of Mulungushi University with a dregree and experience.</p>
+      <div class="highlight-box"><strong>My goal:</strong> to keep practising, learn from feedback, and build projects that demonstrate my technical skills.</div>
+    </section>
+    <section id="hobbies" class="content-section">
+      <p class="eyebrow">OUTSIDE CLASS</p><h2>My hobbies</h2>
+      <div class="hobby-grid"><article class="mini-card"><span>📚</span><h3>Reading</h3><p>Exploring ideas and learning new things.</p></article><article class="mini-card"><span>🎵</span><h3>Listening to music</h3><p>Enjoying music during my free time.</p></article><article class="mini-card"><span>🎮</span><h3>Playing games</h3><p>Having fun and practising problem-solving.</p></article><article class="mini-card"><span>✍️</span><h3>Writing</h3><p>Putting thoughts and ideas into words.</p></article></div>
+    </section>
+    <section id="learning" class="content-section">
+      <p class="eyebrow">KEEP IMPROVING</p><h2>My learning plan</h2>
+      <h3>Steps I will take</h3><ol class="learning-steps"><li>Practise semantic HTML and accessible page structure.</li><li>Use CSS to create responsive, consistent layouts.</li><li>Learn JavaScript events, validation, and DOM updates.</li><li>Build projects, test them, and use feedback to improve.</li></ol>
+      <h3>Weekly web development practice</h3><div class="table-wrap"><table><caption>My weekly web development practice plan</caption><thead><tr><th>Day</th><th>Topic</th><th>Practice task</th></tr></thead><tbody><tr><td>Monday</td><td>HTML</td><td>Practise semantic structure and forms.</td></tr><tr><td>Wednesday</td><td>CSS</td><td>Improve layouts and responsive design.</td></tr><tr><td>Friday</td><td>JavaScript</td><td>Add and test an interactive feature.</td></tr><tr><td>Saturday</td><td>Review</td><td>Test the site and document improvements.</td></tr></tbody></table></div>
+    </section>
+    <section id="projects" class="content-section">
+      <p class="eyebrow">WHAT I'M DEVELOPING</p><h2>Projects & skills</h2><p>These examples describe areas I am practising as an IT student. Update them as you complete more work.</p>
+      <div class="filter-row" role="group" aria-label="Filter projects"><button class="filter-button active" data-filter="all" type="button">All</button><button class="filter-button" data-filter="web" type="button">Web</button><button class="filter-button" data-filter="programming" type="button">Programming</button><button class="filter-button" data-filter="learning" type="button">Learning</button></div>
+      <div class="project-grid" id="project-grid"><article class="project-card" data-category="web"><span class="project-tag">Web</span><h3>Personal portfolio</h3><p>A responsive personal website using HTML, CSS, and JavaScript.</p><p class="skill-line">Skills: HTML · CSS · JavaScript</p></article><article class="project-card" data-category="programming"><span class="project-tag">Programming</span><h3>Programming practice</h3><p>Small exercises to improve logical thinking and understand programming fundamentals.</p><p class="skill-line">Skills: problem-solving · debugging</p></article><article class="project-card" data-category="learning"><span class="project-tag">Learning</span><h3>Learning plan</h3><p>A weekly plan for setting learning goals, practising, and reviewing progress.</p><p class="skill-line">Skills: planning · reflection</p></article></div><p id="filter-status" class="status-message" aria-live="polite">Showing all 3 projects.</p>
+    </section>
+    <section id="photos" class="content-section">
+      <p class="eyebrow">PHOTO GALLERY</p><h2>My photos</h2><p>Select a photo to view it larger. Use Escape to close the viewer.</p>
+      <div class="photo-gallery"><button class="photo-button" type="button" data-full="images/photo1.jpg" aria-label="Enlarge photo 1"><img src="images/photo1.jpg" alt="Personal photo 1" loading="lazy"></button><button class="photo-button" type="button" data-full="images/photo2.jpg" aria-label="Enlarge photo 2"><img src="images/photo2.jpg" alt="Personal photo 2" loading="lazy"></button><button class="photo-button" type="button" data-full="images/photo3.jpg" aria-label="Enlarge photo 3"><img src="images/photo3.jpg" alt="Personal photo 3" loading="lazy"></button><button class="photo-button" type="button" data-full="images/photo4.jpg" aria-label="Enlarge photo 4"><img src="images/photo4.jpg" alt="Personal photo 4" loading="lazy"></button></div>
+    </section>
+    <section id="media" class="content-section">
+      <p class="eyebrow">WATCH & LISTEN</p><h2>My media</h2><div class="media-grid"><article class="media-card"><h3>My introduction video</h3><video controls preload="metadata"><source src="videos/introduction.mp4" type="video/mp4">Your browser does not support video playback.</video><p>A short introduction about me and my programme.</p></article><article class="media-card"><h3>My audio recording</h3><audio controls preload="metadata"><source src="audio/audio.mp3" type="audio/mpeg">Your browser does not support audio playback.</audio><p>A short recording about my hobbies and interests.</p></article></div>
+    </section>
+    <section id="contact" class="content-section">
+      <p class="eyebrow">SAY HELLO</p><h2>Contact me</h2><p>Use the form to practise entering valid information. This demonstration does not send messages to an email account or save them on a server.</p>
+      <form id="contact-form" novalidate>
+        <div class="form-group"><label for="name">Name <span aria-hidden="true">*</span></label><input id="name" name="name" type="text" autocomplete="name" required minlength="2" aria-describedby="name-error"><small id="name-error" class="field-error"></small></div>
+        <div class="form-group"><label for="email">Email address <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error"><small id="email-error" class="field-error"></small></div>
+        <div class="form-group"><label for="topic">Topic</label><input id="topic" name="topic" type="text" maxlength="100"></div>
+        <div class="form-group"><label for="message">Message <span aria-hidden="true">*</span></label><textarea id="message" name="message" rows="5" required minlength="10" aria-describedby="message-error"></textarea><small id="message-error" class="field-error"></small></div>
+        <button class="button" type="submit">Validate message</button><p id="form-status" class="status-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer><p>© <span id="year">2026</span> Naomi Moonga · Student portfolio</p><a href="#main">Back to top ↑</a>
+  <a href="https://github.com/NaomiMoonga/My-Website/tree/main/My%20Web" target="_blank" rel="noopener noreferrer">View Source on GitHub</a>
+  </footer>
+  <dialog id="photo-dialog" class="photo-dialog" aria-label="Enlarged photo"><button id="close-dialog" class="dialog-close" type="button" aria-label="Close enlarged photo">×</button><img id="dialog-image" src="" alt="Enlarged gallery photo"></dialog>
+</body>
+</html>
